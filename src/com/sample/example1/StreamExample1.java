@@ -14,7 +14,7 @@ public class StreamExample1 {
 
         System.out.println("====================================");
 
-        List<Integer> numbers = Arrays.asList(100,500,600,200);
+        List<Integer> numbers = Arrays.asList(100,500,600,200,400);
         System.out.println(numbers.stream().reduce(300,(a,b)->a+b));
 
         System.out.println("====================================");
