@@ -12,7 +12,7 @@ public class StreamExample2 {
         List<Integer> PrimeNumbers = Arrays.asList(5, 7, 11, 13);
 
         // Creating a list of Odd Numbers
-        List<Integer> OddNumbers = Arrays.asList(1, 3, 5);
+        List<Integer> OddNumbers = Arrays.asList(1, 3, 5, 10);
 
         // Creating a list of Even Numbers
         List<Integer> EvenNumbers = Arrays.asList(2, 4, 6, 8);
