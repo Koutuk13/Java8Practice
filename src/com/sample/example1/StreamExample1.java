@@ -8,14 +8,14 @@ public class StreamExample1 {
 
     public static void main(String[] args) {
 
-        List<String> listCountry = Arrays.asList("india","japan","singapore","usa","congo","aus");
+        List<String> listCountry = Arrays.asList("india", "japan", "singapore", "usa", "congo", "aus");
 
-        listCountry.stream().filter(c-> c.length()>3).map(c-> c.toUpperCase()).forEach(System.out::println);
+        listCountry.stream().filter(c -> c.length() > 3).map(c -> c.toUpperCase()).forEach(System.out::println);
 
         System.out.println("====================================");
 
-        List<Integer> numbers = Arrays.asList(100,500,600,200);
-        System.out.println(numbers.stream().reduce(300,(a,b)->a+b));
+        List<Integer> numbers = Arrays.asList(100, 500, 600, 200);
+        System.out.println(numbers.stream().reduce(400, (a, b) -> a + b));
 
         System.out.println("====================================");
     }
