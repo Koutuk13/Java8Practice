@@ -31,5 +31,6 @@ public class StreamExample2 {
         System.out.println("The Structure after flattening is : " +
                 listofInts);
 
+
     }
 }
