@@ -53,7 +53,7 @@ public class EmployeeReminderService {
         },executor).thenAcceptAsync(emailIdList->{
             System.out.println("Inside completable future 5 :: " + Thread.currentThread().getName());
             emailIdList.forEach(EmployeeReminderService::sendEmail);
-        },executor).get();
+        }).get();
     }
 
     private static void sendEmail(String emailId){
@@ -61,7 +61,8 @@ public class EmployeeReminderService {
     }
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        //sendReminderToEmployee();
-        sendReminderToEmployeeAsync();
+        sendReminderToEmployee();
+        //sendReminderToEmployeeAsync();
+        System.out.println("End of main method :: "+ Thread.currentThread().getName());
     }
 }

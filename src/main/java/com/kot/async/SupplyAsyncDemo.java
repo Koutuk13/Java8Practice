@@ -5,7 +5,7 @@ import com.kot.async.repository.EmployeeDAO;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutionException; 
 
 public class SupplyAsyncDemo {
 
