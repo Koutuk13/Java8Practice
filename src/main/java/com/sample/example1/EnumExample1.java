@@ -18,6 +18,7 @@ public class EnumExample1 {
         Pattern pattern = Pattern.compile(collectVehicle);
         Matcher matcher = pattern.matcher("CAR");
         System.out.println(matcher.find());
+        System.out.println(Vehicle.valueOf("CAR"));
        // System.out.println("TRUCK".equalsIgnoreCase(Vehicle.valueOf("TRUCK").toString()));
         System.out.println(Vehicle.valueOf("TRUCK"));
     }

@@ -45,7 +45,10 @@ public class StringExample1 {
             return  result;
         };
         System.out.println(acutal.get().toString());
+        System.out.println("===============================");
 
+        String empty = "";
+        System.out.println("".equals(empty));
 
     }
 

@@ -15,11 +15,11 @@ public class Java8DateTimeExample3 {
         LocalDate localDate3 = localDate2.minusDays(2);
         System.out.println(localDate3.toString());
 
-        varargstest("1","2");
+        varargstest("1","2","3");
     }
 
     static void varargstest(String... param){
-        String s1 = String.format("Hello ('%s') and ('%s')", param[0],param[1]);
+        String s1 = String.format("Hello ('%s') and ('%s') and ('%s')", param[0],param[1],param[2]);
         System.out.println(s1);
     }
 }
