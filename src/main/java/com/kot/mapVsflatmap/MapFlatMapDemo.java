@@ -21,5 +21,7 @@ public class MapFlatMapDemo {
         List<Integer> collect1 = customerList.stream().flatMap(customer -> customer.getPhoneNumber().stream()).collect(Collectors.toList());
         System.out.println(collect1);
 
+
+
     }
 }
