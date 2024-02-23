@@ -61,8 +61,8 @@ public class EmployeeReminderService {
     }
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        sendReminderToEmployee();
-        //sendReminderToEmployeeAsync();
+        //sendReminderToEmployee();
+        sendReminderToEmployeeAsync();
         System.out.println("End of main method :: "+ Thread.currentThread().getName());
     }
 }

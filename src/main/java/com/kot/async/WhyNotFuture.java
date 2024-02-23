@@ -18,6 +18,7 @@ public class WhyNotFuture {
 
         List<Integer> integers = submit.get();
         System.out.println(integers);
+        executorService.shutdown();
     }
 
     private static void delay(int min){

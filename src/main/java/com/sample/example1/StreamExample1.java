@@ -18,5 +18,13 @@ public class StreamExample1 {
         System.out.println(numbers.stream().reduce(400, (a, b) -> a + b));
 
         System.out.println("====================================");
+
+        List<Integer> testNumbers = Arrays.asList(5, 7, 11, 13);
+        List<Integer> subTestNo = testNumbers.subList(0, 2);
+        subTestNo.stream().forEach(System.out::println);
+        System.out.println("-----");
+        testNumbers.stream().forEach(System.out::println);
+
+        System.out.println("====================================");
     }
 }

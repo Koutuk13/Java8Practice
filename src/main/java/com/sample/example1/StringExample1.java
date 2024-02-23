@@ -1,6 +1,7 @@
 package com.sample.example1;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Supplier;
@@ -49,6 +50,17 @@ public class StringExample1 {
 
         String empty = "";
         System.out.println("".equals(empty));
+
+        if("Yes".equals(null)){
+            System.out.println("In if block");
+        }else{
+            System.out.println("In else block");
+        }
+
+        List<String> stringListlist = new ArrayList<>();
+        stringListlist.stream().filter(s->"a".equals(s)).collect(Collectors.toList());
+       // stringListlist.stream().map(String::toUpperCase).forEach(System.out::println);
+        System.out.println("Hello");
 
     }
 
