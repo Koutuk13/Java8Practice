@@ -13,8 +13,8 @@ public class AnagramString {
         String[] split = s1.split("");
         System.out.println("length is :" + split.length);
 
-        String collect1 = Stream.of(s1.split("")).map(String::toUpperCase).sorted().collect(Collectors.joining());
-        String collect2 = Stream.of(s2.split("")).map(String::toUpperCase).sorted().collect(Collectors.joining());
+        String collect1 = Stream.of(s1.split("")).sorted().collect(Collectors.joining());
+        String collect2 = Stream.of(s2.split("")).sorted().collect(Collectors.joining());
 
         if(collect1.equals(collect2)){
             System.out.println("It is anagram");

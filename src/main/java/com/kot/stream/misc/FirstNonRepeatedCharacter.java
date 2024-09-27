@@ -1,8 +1,5 @@
 package com.kot.stream.misc;
 
-import com.sun.xml.internal.fastinfoset.util.CharArray;
-import com.sun.xml.internal.ws.util.StringUtils;
-
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;

@@ -33,7 +33,7 @@ public class CompletableFutureExample1 {
         System.out.println("Execution started");
 
         voidCompletableFuture.thenAcceptAsync((__)->{
-            System.out.println("CompletableFuturee run by thread :: " + Thread.currentThread().getName());
+            System.out.println("CompletableFuture run by thread :: " + Thread.currentThread().getName());
             try {
                 Thread.sleep(2000);
                 System.out.println(cf1.join() + " , " + cf2.join() + " , " + cf3.join());
